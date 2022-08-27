@@ -2,11 +2,16 @@ package SUDOKU_SOLVER;
 
 public class SolveSudoku {
 	
+// 	Link To The Sudoku Question On Leetcode And To The Youtube Video Also Is Given Below : 
 	
 //	https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbVlCX3BIdTRqYmFhMHpqcGZCTGlpZDI2WHpud3xBQ3Jtc0trOFRkNWZYQV9wVk4yYzJIMzRGTUFKR24yblRjV2l3dzFDR1N6TldMVkRQamRrS2kweU5ra0JSTWFzN0puU2JuYVJaNlNRekgwMDRlMGVBbjJfejZINDl1djdfRzBrdHJTd0hTcGI2QlZJRVgwdkpUQQ&q=https%3A%2F%2Fleetcode.com%2Fproblems%2Fsudoku-solver%2F&v=FWAIf_EVUKE
 
+	
+	
 	public boolean isSafe(char[][] board , int row, int col , int number) {
+		
 //		row and column condition
+		
 		for(int i=0;i<board.length; i++) {
 			if(board[i][col]==(char)(number + '0')) {
 				return false;
